@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Optimistic;
+  src: url(/optimist-3.otf) format("opentype");
+}
+@font-face {
+  font-family: Optimistic;
+  src: url(/optimist-bold.otf) format("opentype");
+  font-weight: bold;
+  
+}
+:root {
+  font-family: Optimistic,sans-serif, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+
+
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.container {
+  justify-content: center;
+  width: 100%;
+}
+
+.rounded-box {
+  border-radius: 15px;
+  padding: 20px;
+  text-align: left;
+  width: 100%;
+}
+
+h2 {
+  margin-bottom: 15px; /* Add space between title and cards */
+  color: #fff; /* White color for the title */
+  font-weight: bold;
+  font-size: 3em;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between; /* Add space between cards */
+  width: 100%;
+}
+
+.card {
+  background-color: #5AB283; /* Slightly opaque white */
+  border-radius: 4px;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
+  margin-right: 10px; /* Add space between cards */
+}
+
+.statistic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statistic p {
+  margin: 5px 0;
+}
+
+.large {
+  width: 100%; /* Make the large stats card twice as wide */
+}
+
+.small {
+  width: 100%; /* Make the small cards one-third as wide */
+}
+
+.l-stats-title {
+  color: #fff;
+  font-size: 2em;
+  text-align: left;
+  font-weight: bold;
+}
+.l-stats-value {
+  color: #fff;
+  font-size: 4em;
+  font-weight: bold;
+}
+.l-stats-secondary {
+  color: #fff;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.s-stats-title {
+  color: #fff;
+  font-size: 2.5em;
+}
+
+.s-stats-value {
+  color: #fff;
+  font-size: 3em;
+}
+
+
+.growth-indicator {
+  margin-top: 10px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.indicator-box {
+  background-color: #BEE8EC; /* Light green color */
+  border-radius: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: inline-block;
+}
+
+.growth-text {
+  color: #76AFAD; /* Dark green color */
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.growth-value {
+  font-weight: bold;
+}
